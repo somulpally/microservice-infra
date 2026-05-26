@@ -1,0 +1,17 @@
+# Example terraform.tfvars
+# Rename to terraform.tfvars and update values
+
+project_name = "microservice"
+env          = "dev"
+location     = "eastus"
+node_count   = 3
+vm_size      = "Standard_B2s"
+kubernetes_version = "1.27"
+network_plugin = "azure"
+
+tags = {
+  project     = "microservice-learning"
+  managed_by  = "terraform"
+  environment = "learning"
+  team        = "devops"
+}
